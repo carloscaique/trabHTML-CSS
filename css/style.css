@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+:root {
+    --primary: #141517;
+    --secondary: #213A3B;
+    --tertiary: #917A6D;
+}
+
+#container {
+    display: flex;
+    height: auto;
+    width: 100%;
+    /* background-color: var(--primary); */
+    background-image: url(https://images.unsplash.com/photo-1599394020865-34fc6b6f77ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1595&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    width: 25%;
+    /* background-color: var(--secondary); */
+    background: transparent;
+    background: rgba(0, 0, 0, .5);
+}
+
+aside img {
+    border-radius: 80%;
+    width: 20rem;
+    height: 20rem;
+    margin: 55px;
+}
+
+aside h2 {
+    margin-bottom: 2rem;
+    color: aliceblue;
+}
+
+/* BOTÕES PERSONALIZADOS */
+.button-27 {
+    margin: 10px;
+    appearance: none;
+    background: rgba(0, 0, 0, .5);
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 60px;
+    min-width: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action: manipulation;
+    width: 50%;
+}
+
+.button-27:disabled {
+    pointer-events: none;
+}
+
+.button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* FIM  BOTÕES PERSONALIZADOS */
+
+.botoes {
+    width: 100%;
+    text-align: center;
+}
+
+.botoes .bi {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.sectionSobreMim {
+    display: flex;
+    display: inline;
+    text-align: justify;
+    justify-content: center;
+    margin: 2rem;
+    color: aliceblue;
+}
+
+#titulo1 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#txtSobreMim {
+    display: flex;
+    font-size: 1.5rem;
+    /* margin-left: 2.5rem; */
+    background: rgba(0, 0, 0, .60);
+    padding: 12px 50px;
+    border-radius: 16px;
+}
+
+#txtJornada {
+    background: rgba(0, 0, 0, .70);
+    padding: 12px 50px;
+    border-radius: 16px;
+}
+
+#txtJornada {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+#subtitulo1 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.5rem;
+}
+
+#subtitulo3 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.5rem;
+}
+
+#inspiracao {
+    display: flex;
+    padding: 16px 0 16px 60px;
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 16px;
+    height: 330px;
+    background: rgba(0, 0, 0, .70);
+    flex-wrap: wrap;
+}
+
+#inspiracao a {
+    display: flex;
+    margin: 5%;
+}
+
+#inspiracao a img {
+    border-radius: 80%;
+}
+
+#sectionNewtwork {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.whats .bi {
+    cursor: pointer;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 15px;
+    right: 50px;
+    z-index: 9999;
+    color: greenyellow;
+}
+
+@media(max-width: 1322px){
+
+    #container{
+        align-items: center;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    aside{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .botoes {
+        width: 100%;
+        text-align: center;
+    }
+
+    #inspiracao{
+        height: fit-content;
+    }
+
+}
